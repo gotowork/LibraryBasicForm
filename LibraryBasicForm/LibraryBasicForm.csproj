@@ -58,9 +58,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Theia.Panels">
-      <HintPath>..\..\CustomPanelControl\ThPanel\bin\Debug\Theia.Panels.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CFastReportMethods.cs" />
@@ -134,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\titlebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CustomPanelControl\ThPanel\Theia.Panels.csproj">
+      <Project>{8f889157-74c9-4c96-bd7b-e0d311f73bac}</Project>
+      <Name>Theia.Panels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
